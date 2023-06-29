@@ -15,9 +15,9 @@
     <button class="add-book">Add book</button>
   </div>
   <div class="main">
-    <div class="book">
+    <!-- <div class="book">
       <div class="book-info">
-        <h2>ABC</h2>
+        <h2 class="title">ABC</h2>
         <h3 class="author">by X Y</h3>
         <h3 class="pages">200 pages</h3>
       </div>
@@ -36,7 +36,22 @@
         <button class="read-status unread">Unread</button>
         <button class="delete">Delete</button>
       </div>
-    </div>
+    </div> -->
   </div>
+  <dialog class="book-dialog">
+    <div>
+      <h2>New book</h2>
+      <form class="book-form">
+        <input type="text" id="new-book-title" placeholder="Title" required>
+        <input type="text" id="new-book-author" placeholder="Author" required>
+        <input type="number" id="new-book-pages" placeholder="Pages" required>
+        <div id="new-book-read">
+          <label for="new-book-read-checkbox">Have you read it yet?</label>
+          <input type="checkbox" id="new-book-read-checkbox">
+        </div>
+        <button type="submit" class="submit-book">Add book</button>
+      </form>
+    </div>
+  </dialog>
 </body>
 </html>
